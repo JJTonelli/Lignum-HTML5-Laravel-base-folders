@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h2>Formulario de registro</h2>
+
+    <form action="" id="formulario-registro">
+
+        <div style="display: flex; flex-direction:column; width: 50%;">
+            <div style="margin-bottom: 10px;">
+                <label>Nombre</label>
+                <input type="text" required>
+                <label>Apellido</label>
+                <input type="text" required>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label>Correo electronico </label>
+                <input type="email" required>
+                <label>Fecha de nacimiento </label>
+                <input type="date" required>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label>Deporte favorito </label>
+                <select required>
+                    <option value="Futbol">Futbol</option>
+                    <option value="Tenis">Tenis</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Voley">Voley</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label>Contanos un poco de vos </label>
+                <textarea maxlength="50" placeholder="Maximo 50 caracteres" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" form="formulario-registro" value="Submit">Enviar</button>
+                <button type="submit" form="formulario-registro" value="Reset">Reiniciar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
