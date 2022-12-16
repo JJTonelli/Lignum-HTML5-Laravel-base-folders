@@ -19,3 +19,20 @@ window.onload = () => {
 function buttonAlert() {
   alert('Presionaste el boton!');
 }
+
+function getJoke() {
+  //api.icndb.com/jokes/random
+  /* fetch(' http://api.icndb.com/jokes/random') <-- no funciona?? */
+  fetch('https://api.chucknorris.io/jokes/random')
+    .then((response) => response.json())
+    .catch((err) => {
+      let section = document.getElementById('fade-in');
+      section.classList.add('fetch-error');
+      console.log(err);
+    })
+    .then((data) => {
+      let section = document.getElementById('fade-in');
+      section.classList.remove('fetch-error');
+      section.innerText = data.value;
+    });
+}

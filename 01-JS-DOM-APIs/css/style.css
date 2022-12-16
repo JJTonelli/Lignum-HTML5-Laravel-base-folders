@@ -3,3 +3,7 @@
     text-align: center;
     opacity: 0;
 }
+
+.fetch-error {
+    background-color: red;
+}
