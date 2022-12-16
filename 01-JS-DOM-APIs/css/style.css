@@ -7,3 +7,13 @@
 .fetch-error {
     background-color: red;
 }
+
+#repositories {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+#matrix {
+    margin-top: 25px;
+}
